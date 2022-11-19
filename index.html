@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<link
+		  rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+	  </head>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="device-width, initial-scale=1.0">
+	<title>Лабораторная 11</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head> 
+<body>
+	<header>
+			<div class="container">
+			<div id="header-content">
+							
+				<img id="logo" src="img/logo.png" alt="logo"/> 
+				<p class="motto">С помощью нас вы сможете создать то, о чем <mark>желаете!</mark></p>
+				<p class="head_text">Наши возможности и опыт позволят вам достичь огромного успеха. Мы верим
+				в вас! И знаем это на все 100%. Вас не остановить!</p>
+				<button id=color class="button" name="more-info" type="button" value="get-info" animation: more-info 2s ease 0s infinite normal none>Узнать больше…</button>
+				
+				
+			</div>
+			<img id="header-image" src="img/header-img.png" alt="header image"/>
+		</div>
+	</header>
+
+		<main>
+		<div class="step-container">
+			<article>
+				<h3>Что вам необходимо?</h3>
+				<div class="steps">
+					<div class="step step-one" id="step-one">
+						<img src="img/f3.png" alt="pencil"/>
+						<p class="step-head">Первый блок</p>
+						<p>Здесь будет что-то интересное про первый блок. Он очень полезный и крутой. Жизненно необходим.</p>	
+					</div>
+					<div class="step step-two" id="step-two">
+						<img src="img/f4.png" alt="balloon"/>
+						<p class="step-head">Второй блок</p>
+						<p>Здесь будет что-то интересное про второй блок. Он очень полезный и крутой. Жизненно необходим.</p>	
+					</div>
+					<div class="step step-three" id="step-three">
+						<img src="img/f5.png" alt="flag"/>
+						<p class="step-head">Третий блок</p>
+						<p>Здесь будет что-то интересное про третий блок. Он очень полезный и крутой. Жизненно необходим.</p>	
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<form class="form" id="main_form" action="javascript:void(0);" autocomplete="off">
+			<h3>Форма регистрации на курс</h3>
+			<div class="form-row input-field">
+			  <input id="first_name" type="text" class="input" name="FirstName" placeholder="Имя" required autofocus>
+			  </div>
+			<div class="form-row input-field">
+			  <input id="last_name" type="text" class="input" name="LastName" placeholder="Фамилия" required>
+			</div>
+			<div class="form-row input-field">
+			  <input id="your_email" type="email" class="input" name="email" placeholder="Email" required>
+			</div>
+			<div class="form-row input-field">
+			  <input id="your_phone" type="tel" class="input" name="Phone" placeholder="+79123456789" required>
+			</div>
+			<div class="form-row form-row-btn">
+			  <button class="submit" id="submit" type="submit" name="submit">Отправить</button>
+			</div>
+		  </form>
+
+		<form id="my-form">
+			<h3>Форма заказа обратного звонка</h3>
+			<div class="form-row input-field">
+				<input id="first_name" type="text" class="input" name="FirstName" placeholder="Имя" required>
+			 </div>
+			  <div class="form-row input-field">
+				<input id="your_phone" type="tel" class="input" name="Phone" placeholder="+79123456789" required>
+			 </div>
+			  <div class="form-row form-row-btn">
+				<button class="submit" id="submit" type="submit" name="submit">Отправить</button>
+			  </div>
+		</form>
+	</main>
+	<footer>
+		<p>©FASHION TALK®</p>
+	</footer>
+
+	<script src="main.js"></script>
+</body>
+</html>

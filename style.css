@@ -1,0 +1,195 @@
+
+
+
+
+
+
+header {
+	background: rgb(4,87,113);
+	background: linear-gradient(67deg, rgb(36, 95, 222) 35%, rgba(0,212,255,1) 100%);
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background: rgb(210,225,230);
+	margin-bottom: 0;
+	padding: 20 20 40 20;
+}
+input {
+	align-self: center;
+	width: 250px;
+	margin: 10 auto 10 auto;
+}
+
+form .input{
+	height: 40;
+	padding: 5 20 5 20;
+}
+
+h3 {
+	text-align: center;
+	font-size: large;
+	padding: 20 0 20 0;
+}
+
+footer {
+	padding: 30 0 30 0;
+	text-align: center;
+	background: rgb(4,87,113);
+	background: linear-gradient(210deg, rgba(4,87,113,1) 35%, rgba(0,212,255,1) 100%);
+	color: white;
+}
+
+.container {
+	display: flex;
+	width: 70%;
+	margin: auto;
+	justify-content: baseline;
+}
+
+.step-container {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: auto;
+	justify-content: center;
+	padding: 50 0 70 0;
+}
+
+.steps {
+	display: flex;
+	text-align: center;	
+	justify-content: center;
+}
+
+.step-one{
+	position: relative;
+	transition-duration: 1s;
+	transform: translateY(0px)
+}
+.step-two{
+	position: relative;
+	transition-duration: 1s;
+	transform: scale3d(1, 1, 1);
+}
+.step-three{
+	position: relative;
+	transition-duration: 0.5s;
+	transform: translateX(0);
+	
+}
+.step-one:hover{
+	transform: translateY(5px);
+	background:rgba(9, 148, 248, 0.533) ;
+}
+
+.step-two:hover{
+    transform: scale3d(0, 1, 1);
+	background:rgba(81, 9, 248, 0.533) ;
+}
+.step-three:hover{
+    background:rgba(184, 9, 248, 0.533) ;
+	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.step-head {
+	font-size: large;
+	font-weight: bold;
+}
+
+
+
+
+  
+.button {
+	height: 50px;
+	width: 200px;
+	border: none;
+	padding: 15 30 15 30;
+	font-weight: bold;
+	position: relative;
+	transition-duration: 1s;
+		}
+
+.button:hover {
+background:rgb(99, 223, 9) ;
+}
+
+.motto {
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.offer {
+	max-width: 200;
+	margin: 50 50 50 50;
+}
+
+.offer mark{
+	font-size: 150%;
+	color: white;
+	background-color: transparent;
+}
+
+.offer p{
+	color: white;
+}
+
+#header-image {
+	width: 500px;
+	height: 500px;
+	margin-right: auto;
+	display: flex;
+	flex-wrap:wrap ;
+}
+
+
+@media (min-width:0px)
+{
+	.input{width: 90%;}
+	.steps {flex-direction: column;}
+	.container{width:auto; display: block;} 
+	#header-content{ width: 440px;}
+	#header-image {width: 250px; height: 250px;}
+}
+
+@media (min-width:768px)
+{ 
+	.input{width: 250px;}
+	.container{width:540px; display: block;} 
+	.steps {flex-direction: column;}
+	.button {background: red;}
+	#header-image {max-width: 75%;}
+	#header-content{ width: 440px;}
+	#header-image {width: 400px;height: 400px;}
+} 
+
+@media (min-width:992px)
+{ 
+	.input{width: 250px;}
+	.container{width:720px; display:flex} 
+	.steps {flex-direction: row;}
+	.button {background: rgb(37, 60, 2);}
+	#header-image {max-width: 75%;}
+	#header-image {width: 500px;height: 500px;}
+
+	} 
+
+@media (min-width:1200px) 
+{ 
+	.input{width: 250px;}
+	.steps {flex-direction: row;}
+	.container{width:960px; display:flex}
+	.button {background: yellow;}
+	#header-image {max-width: 75%;}
+	#header-image {width: 500px;height: 500px;}
+		
+} 
